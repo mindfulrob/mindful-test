@@ -1,1 +1,3 @@
 # mindful-test
+
+Here are the local dev setup steps...
