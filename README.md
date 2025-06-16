@@ -1,4 +1,7 @@
 # mindful-test
 
 This is a test repository, used for testing things.  
-More stuff here.
+More stuff here. 
+
+### Local development notes
+Here are some notes about how to develop this project locally.
