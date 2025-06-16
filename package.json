@@ -1,0 +1,12 @@
+{
+  "name": "mindful-test",
+  "version": "1.0.0",
+  "description": "A test package for semantic release",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mindfulrob/mindful-test.git"
+  },
+  "devDependencies": {
+    "semantic-release": "^24.2.5"
+  }
+}
