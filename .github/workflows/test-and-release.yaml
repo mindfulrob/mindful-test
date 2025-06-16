@@ -1,0 +1,27 @@
+name: Test and release
+
+on:
+    push:
+        branches:
+        - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Test
+      run: |
+        echo "Running tests..."
+        # Add your test commands here
+        echo "Tests completed successfully."
+  release:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Semantic Release
+      uses: cycjimmy/semantic-release-action@v4
+      with:
+        branch: main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
